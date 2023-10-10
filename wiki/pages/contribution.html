@@ -1,20 +1,210 @@
-{% extends "layout.html" %}
-  
-{% block title %}Contribution{% endblock %}
-{% block lead %}Make a useful contribution for future iGEM teams. Use this page to document that contribution.{% endblock %}
-
-{% block page_content %}
-
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #4</h4>
-      <p>Make a useful contribution for future iGEM teams. Use this page to document that contribution.<p>
-      <p>If you are making a contribution by adding information to an existing Part or creating a new Part, you must document your contribution on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria. You can use this page to link to that part and include additional information about your contribution.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/stylesheet.css">
+</head>
+<div class="tank_middle">
+  <div class="box">
+    <a href="home"><img src="https://static.igem.wiki/teams/4599/wiki/img-5550.png" style="width: 70px;"></a>
+      <div class="dropdown">
+        <a onclick= "myFunction('myDropdown')" class="nav-button">Project<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown">
+            <a href="description">Description</a>
+            <a href="contribution">Contribution</a>
+            <a href="engineering">Engineering</a>
+        </div>
     </div>
-  </div>
-</div>
+    <div class="dropdown">
+        <a onclick="myFunction('myDropdown1')" class="nav-button">Wet Lab<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown1">
+            <a href="experiments">Experiments</a>
+            <a href="notebook">Notebook</a>
+            <a href="results">Results</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="myFunction('myDropdown2')" class="nav-button">Dry Lab<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown2">
+            <a href="model">Model</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="myFunction('myDropdown3')" class="nav-button">Team<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown3">
+            <a href="team">Team</a>
+            <a href="attributions">Attributions</a>
+        </div>
+    </div>
 
-{% endblock %}
+    <div class="dropdown">
+        <a  onclick="myFunction('myDropdown4')" class="nav-button">Human Practices<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown4">
+            <a href="humanpractices">Human Practices</a>
+            <a href="inclusivity">Inclusivity</a>
+            <a href="education">Education</a>
+            <a href="safety">Safety</a>
+          </div>
+      </div>
+  </div>
+</div>    
+<body class="body_not_home">
+
+    <div class="top_header_body">
+        <div class="top_header_title">Contributions</div>
+        <div class="top_header_subtitle">Parts and Participation</div>
+        <div class="top_header_gradient"></div>
+    </div>
+
+    <div> <!--mainbody-->
+        <div class="table_of_contents_container">
+          <p class="table_of_contents_title">
+            Contribution
+          </p>
+          <div onclick="location.href='#option_1_header'" class="content_of_table" id="option_1">
+            Overview
+          </div>
+          <div onclick="location.href='#option_2_header'" class="content_of_table" id="option_2">
+            Parts
+          </div>
+          <div onclick="location.href='#option_3_header'" class="content_of_table" id="option_3">
+            Participation
+          </div>
+          
+        </div>
+
+        
+        <!--ABSTRACT-->
+        <div class="text_by_side">
+          <div id="option_1_header">
+              <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/sky-bulb.png"><h1 class="p-title">Overview</h1></div>
+            <p class="main-P-Text">
+              This year, our team focused on adding a color changing protein to the iGEM registry. Our project uses this color changing protein to test for pathogens that exist in water. This will be applicable to both commercial aquaculture and home aquariums. By using this protein and making it readily accessible, monitoring your pet’s health is easier than ever. Our contribution this year was inspired by the work of Stewart Loh’s lab, which engineered a beta barrel color change system that is triggered by the presence of a target ligand. This tech inspired our team to create our ChromoSense color changing protein.
+ We chose to use chromoproteins because their expression is more easily visible under ambient light than the alternative, which would have been to use fluorescence. This is because chromoproteins are able to absorb and reflect visible light as opposed to a fluorescing protein such as GFP. To engineer this color change we decided to use two chromoproteins that share a beta barrel structure as well as a central chromophore. Both tsPurple and asPink emit strong color within 24 hours of their incubation. tsPurple is also known as TinselPurple, it is a synthetic chromoprotein that expresses as purple. It is mainly used for expression in <i>E. coli</i>. asPink, named for <i>Anemonia sulcata</i> , the anemone from which it was derived, is a pink chromoprotein. We hope to elucidate the essential amino acids giving these proteins their distinct colour differences
+            
+            </p>
+            <div style="display: flex; justify-content: center; margin-left: 10%; margin-right: 10%">
+              <img style="width: 60%; margin-top: 40px; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/contributions/aspinkmapoct2023.png">
+            </div>
+            <p class="figureCaption"> Plasmid map of pSB1C3-asPink that was used in mutagenesis reactions.</p>
+            <p class="main-P-Text">
+              This plasmid was a significant contribution into the iGEM registry by the Uppsala 2013 team, it is accessible through Addgene and utilizes the following iGEM parts; constitutive promoter (BBa_J23110), ribosome binding site (BBa_B0034), and a double terminator (BBa_B0014). We used site-directed mutagenesis to introduce nucleotide changes to the DNA sequence of asPink to identify which amino acids are important for the pink colour. Once those amino acids are identified, we can use molecular dynamics tools to design a protein that is able to switch colour by integrating a new beta-strand into its structure. The idea of a  colour-switching biosensor protein is new to the iGEM competition. Similarly, using a circularly premutated FKBP binding domain (cpFKBP) is new as well and will serve as a proof-of-concept “trigger” sequence.
+
+            </p>
+          </div>
+            
+          <div id="option_2_header">
+            <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-problem.png"><h1 class="p-title">Parts</h1></div>
+            <p class="main-P-Text">
+
+            <div style="display: flex; justify-content: center;">
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Existing Parts</td>
+                    <td>constitutive promoter (BBa_J23110)</td>
+                    <td>ribosome binding site (BBa_B0034)</td>
+                    <td>double terminator (BBa_B0014)</td>
+                    <td>asPink (BBa_K1033927)</td>
+                    <td>tsPurple (BBa_K1033903)</td>
+                  </tr>
+                  <tr class="active-row">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>New Parts </td>
+                    <td>asPinkT94Q,T95I mutant (BBa_K4599001)</td>
+                    <td>cpFKBP (BBa_K4599002)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </p>
+            </div>
+            
+            <p style="margin-bottom: 20px;" class="main-P-Text">asPinkT94Q,T95I mutant (BBa_K4599001) - This protein has two amino acid changes compared to the wildtype. There was little difference in the colour of the protein but there was a much longer maturation time of the protein. There is an added Hpy188III cut site added for mutation screening.
+            </p>
+
+            <p class="main-P-Text">cpFKBP (BBa_K4599002) - This is a circularly permuted version of the FKBP recognition domain (BBa_K3610022).
+            </p>
+
+          <div id="option_3_header">
+          <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-dna.png"><h1 class="p-title">Participation</h1></div>
+
+          <h2>iGEM Competition</h2>
+          <p class="main-P-Text">This is the first time a team has proposed using entropy-driven beta-strand exchange to create a protein biosensor. Protein conformational switches are widely used and often consist of an input recognition domain (that binds to a ligand) fused to an output reporter domain (that produces a signal). An issue with many of these biosensors, is how to tie the input to the output using a conformational change. This new design by Stewart Loh allows for modular use and generalization by inserting different recognition domains into the same protein scaffold. We hope that by introducing this concept to the iGEM competition, other teams will be able to use this background for their projects in the future.
+          </p>
+          
+          <h2>Alberta iGEM</h2>
+          <p class="main-P-Text">We have contributed to the iGEM ecosystem of Alberta by promoting synthetic biology within our province. We were co-hosts of the Alberta SynBio Skills Workshop at the U of L in March 2023. We participated in the Tech Futures Challenge and presented at the Calgary Maker Faire in May 2023. As part of our fundraising efforts we gave a project presentation to community members in Lethbridge in August 2023. We were also the only high school team presenters at the JulyGEM competition hosted by the U of C iGEM team in July 2023.
+          </p>
+
+          <h2>High School iGEM in Canada</h2>
+          <p class="main-P-Text">We are the only Canadian high school team to compete at the international level. We have collaborated on a PromoScience (NSERC) grant application to bring more funding to western Canada high school iGEM teams. Fingers crossed we get funding!
+          </p>
+
+          </div>
+          <button id="scroll-top" onclick="backToTop()"><img src="https://static.igem.wiki/teams/4599/wiki/blue-scroll-top.png"></button>
+      </div>
+    </div>
+
+    <footer id="footer", class="footer">
+      
+    <div class="social-icons-wrapper">
+      <a href="https://www.facebook.com/lethbridgehsiGEM/" target="_blank" class="social-link facebook-link w-inline-block icon-link">
+        <img src="https://static.igem.wiki/teams/4599/wiki/facebook-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <a href="https://twitter.com/lethhs_igem?lang=en" target="_blank" class="social-link twitter-link w-inline-block icon-link">
+        <img src="https://static.igem.wiki/teams/4599/wiki/x-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <a href="https://www.instagram.com/lethbridgehsigem/" target="_blank" class="social-link instagram-link w-inline-block icon-link">
+        <img src="https://static.igem.wiki/teams/4599/wiki/instagram-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <a href="https://www.tiktok.com/@lethbridgehsigem" target="_blank" class="social-link tik-tok-link w-inline-block icon-link">
+          <img src="https://static.igem.wiki/teams/4599/wiki/tik-tok-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+  
+      <div class="footer-divider"></div>
+      <a href="https://gitlab.igem.org/2023/lethbridgehs" target="_blank" class="social-link gitlab-link w-inline-block icon-link">
+          <img src="https://static.igem.wiki/teams/4599/wiki/gitlab-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <div class="footer-divider"></div>
+      <div class="footer-text">
+        <p class="mb-0"><small>© 2023 - Content on this site is licensed under a <a class="subfoot" href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</small></p>
+        <p><small>The repository used to create this website is available at <a class="subfoot" href="https://gitlab.igem.org/2023/lethbridgehs">gitlab.igem.org/2023/lethbridgehs</a>.</small></p>        
+      </div>    
+    </div>
+  </footer>
+
+  <div class="loader-wrapper">
+    <span class="loader"></span>
+  </div>
+
+    <script src="static/index.js"></script>
+</body>
+</html>

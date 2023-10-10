@@ -1,4 +1,230 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/stylesheet.css">
+</head>
+<div class="tank_middle">
+  <div class="box">
+    <a href="home"><img src="https://static.igem.wiki/teams/4599/wiki/img-5550.png" style="width: 70px;"></a>
+      <div class="dropdown">
+        <a onclick= "myFunction('myDropdown')" class="nav-button">Project<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown">
+            <a href="description">Description</a>
+            <a href="contribution">Contribution</a>
+            <a href="engineering">Engineering</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="myFunction('myDropdown1')" class="nav-button">Wet Lab<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown1">
+            <a href="experiments">Experiments</a>
+            <a href="notebook">Notebook</a>
+            <a href="results">Results</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="myFunction('myDropdown2')" class="nav-button">Dry Lab<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown2">
+            <a href="model">Model</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="myFunction('myDropdown3')" class="nav-button">Team<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown3">
+            <a href="team">Team</a>
+            <a href="attributions">Attributions</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a  onclick="myFunction('myDropdown4')" class="nav-button">Human Practices<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown4">
+            <a href="humanpractices">Human Practices</a>
+            <a href="inclusivity">Inclusivity</a>
+            <a href="education">Education</a>
+            <a href="safety">Safety</a>
+          </div>
+      </div>
+  </div>
+</div>     
+<body class="body_not_home">
+
+    <div class="top_header_body">
+        <div class="top_header_title">Project Description</div>
+        <div class="top_header_subtitle">What is ChromoSense?</div>
+        <div class="top_header_gradient"></div>
+    </div>
+
+    <div> <!--mainbody-->
+        <div class="table_of_contents_container">
+          <p class="table_of_contents_title">
+            Project
+          </p>
+          <div onclick="location.href='#option_1_header'" class="content_of_table" id="option_1">
+            Abstract
+          </div>
+          <div onclick="location.href='#option_2_header'" class="content_of_table" id="option_2">
+            Defining the Problem
+          </div>
+          <div onclick="location.href='#option_3_header'" class="content_of_table" id="option_3">
+            Our Solution
+          </div>
+          <div onclick="location.href='#option_4_header'" class="content_of_table" id="option_4">
+            Results
+          </div>
+          <div onclick="location.href='#option_5_header'" class="content_of_table" id="option_5">
+            Future Directions
+          </div>
+        </div>
+
+        
+        <!--ABSTRACT-->
+        <div class="text_by_side">
+          <div id="option_1_header">
+              <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/sky-bulb.png"><h1 class="p-title">Abstract</h1></div>
+            <p class="main-P-Text">
+                <img style="width: 80%; margin: 40px auto; display: block; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/project-description/pictureabstract.png">
+                Our team is exploring the feasibility of using a chromoprotein as a biosensor platform. We envision a colour-changing chromoprotein that can switch colours upon binding to a target ligand. The biosensor design is based on work done by Stewart Loh's lab (John et al. 2022). In their 2022 paper, they created a switchable GFP biosensor that can change colour (green to yellow) upon binding to a ligand. This technology has the potential to be used to detect a wide array of targets and could be expanded to use chromoproteins instead of fluorescent proteins.
+
+                While the designed biosensor has the potential to detect a variety of ligands, we chose to focus on creating a biosensor to detect one of the most serious health problems of captive marine fish. Velvet disease is a disorder caused by dinoflagellate parasites of the Amyloodinium genus. The parasite can enter the slime coat of a host fish and then dissolve and consume the host's cells. Fish farmers and pet owners would benefit from having a rapid test that is able to detect low levels of the juvenile parasite before it is able to infect the fish.
+                
+                
+                The biosensor will be engineered to change colour upon binding to a target protein produced by the parasite. Our plan is to create a user-friendly lateral flow assay that does not require any specialized equipment and has a long shelf life.
+                
+            
+            </p>
+            <img style="width: 80%; margin: 40px auto; display: block; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/masataros-fish.png">  <!-- REPLACE THIS IMAGE WITH A GOOD ONE -->
+            <p class="figureCaption"> Team member Masataro's pet fish.</p>
+          </div>
+            
+          <div id="option_2_header">
+            <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-problem.png"><h1 class="p-title">Defining the Problem</h1></div>
+            <p class="main-P-Text">
+                Several team members have pet fish and are not alone in their love of their aquatic friends. The global pet fish market has been growing steadily and the ornamental fish market was valued at over $5.88 billion USD in 2022. 
+
+                <img style="width: 80%; margin: 40px auto; display: block; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/project-description/ornamentalfishmarket.png">  <!-- REPLACE THIS IMAGE WITH A GOOD ONE --><br>
+
+                All pet parents want to keep their loved ones safe and healthy. Unfortunately, animal vet treatment costs can be prohibitively expensive. Therefore, access to inexpensive and rapid diagnostic tools would greatly decrease the cost of pet ownership. In 2018, the animal diagnostic market size in the US was valued at $2.1 billion and is expected to grow.
+                <img style="width: 80%; margin: 40px auto; display: block; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/project-description/us-companion-animal-diagnostics-market.png">  <br>
+                Additionally, due to climate change and a rapidly growing global population, food production and sustainability practices are essential challenges to tackle. Millions of tonnes of fish are consumed every year around the world. Aquaculture can relieve pressure on wild fish populations by providing an alternative source of fish protein and making aquaculture as productive and safe as possible should be a priority. Aquaculture also addresses the <a href="https://sdgs.un.org/goals" target="_blank">UN’s sustainable development goals</a> 2, 13, and 14.<br>
+                
+                <div style="text-align: center;">
+                    <a href="https://www.statista.com/chart/2280/the-global-fish-farming-industry-is-booming/" title="Infographic: Aquaculture Accounts for Half of the World's Fish Supply | Statista">
+                        <img src="https://cdn.statcdn.com/Infographic/images/normal/2280.jpeg" alt="Infographic: Aquaculture Accounts for Half of the World's Fish Supply | Statista" width="80%" height="auto" style="width: 80%; height: auto !important; max-width:960px;-ms-interpolation-mode: bicubic;"/>
+                    </a> 
+                    <br>
+                    You will find more infographics at 
+                    <a href="https://www.statista.com/chartoftheday/">Statista</a>
+                </div>
+            
+                            
+            <p class="main-P-Text"> Even though Alberta is a landlocked Canadian prairie province, the aquaculture industry has grown significantly in the past decade. Alberta companies are now selling tilapia to Vancouver restaurants and yearly revenue has climbed to over $20 million. These companies hope to reduce the environmental footprint of seafood harvested overseas and transported to Alberta and supply ethically raised fresh food to their customers.
+            </p>
+            <img style="width: 50%; margin: 40px auto; display: block; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/project-description/mapofalbertafisheries.png">  <p class="figureCaption"> Aquaculture facilities in Alberta.</p>
+            
+            <p class="main-P-Text"> While aquaculture can relieve pressure on the environment, it is essential to acknowledge that aquaculture is not entirely without its challenges. Poorly managed aquaculture operations can lead to disease outbreaks and fish deaths. A major difficulty for aquaculture is the tendency towards monoculture and the associated risk of widespread disease.
+
+                Since 2016, there have been 311 reported health events at aquaculture facilities in BC. Bacterial disease and parasitic infections make up 88 and 4% of these reports, respectively (<a href="https://www.pac.dfo-mpo.gc.ca/aquaculture/reporting-rapports/health-events-sante/index-eng.html" target="_blank">Government of Canada Report</a>).
+                
+            </p>
+            <img style="width: 80%; margin: 40px auto; display: block; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/project-description/fishdiseasegraph.png"> <p class="figureCaption"> Reported disease outbreak numbers in BC 2016 - 2022.</p>
+            
+            <p class="main-P-Text"> With the expanding aquaculture industry, the chance of fish disease increases and having a rapid test available to these farmers helps to reduce the risk of spread is important. Aquaculture systems need to be monitored frequently and made-in-Alberta technology will benefit those facilities.
+            </p>
+
+
+          <div id="option_3_header">
+          <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-dna.png"><h1 class="p-title">Our Solution</h1></div>
+
+            <p class="main-P-Text">
+                The design of our biosensor is based off of work done by Stewart’s Loh’s lab (John et al., 2022 https://pubs.acs.org/doi/10.1021/acssensors.1c02239). In their paper, they created a switchable GFP biosensor that can change colour (green to yellow) upon binding to a ligand (rapamycin). This technology has the potential to be used to detect a wide array of targets and could be expanded to use chromoproteins instead of fluorescent proteins.<br>
+            <img style="width: 50%; margin: 40px auto; display: block; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/project-description/gfpdetectionmutant.gif"><br>
+            The original GFP N and C-termini was changed to have the N-terminal start at ꞵ11 and the C-terminal at ꞵ10. A new linker region between the ꞵ11 strand and the ꞵ1 strand was added. A new ꞵ10′ strand was added to ꞵ11 to create a new N-terminal. This secondary ꞵ10′ had Y203 instead of T203 which changes the fluorescence emission from green to yellow. Additionally, the amino acid linker between ꞵ11 and ꞵ10′ was replaced with a disordered recognition domain (cpFKBP - in blue). Upon binding to FK506 (red), the cpFKBP domain folds and the ꞵ10′ Y203 strand is included in the protein fold and replaces the original ꞵ10 T203 strand, thus changing the emission from green to yellow. <br><br>
+            While a fluorescent protein was used in John et al. (2022), our design will attempt to utilize a chromoprotein instead. The advantage of this method is that the chromoprotein colour change will be more visible without the use of any specialized equipment. Several chromoproteins were developed and characterized by the 2013 Uppsala iGEM team. From these, we chose to use tsPurple (BBa_K1033905) as our starting chromoprotein model system. This protein produces a rich purple colour when expressed in E. coli and was found to be quite stable and easy to express (Liljeruhm et al., 2018). The chromophore sequence of tsPurple is CMYG. Another chromoprotein, asPink, has the same chromophore sequence. We created 3D models using Swiss-model of tsPurple and asPink since no structural data were available. Both proteins have the common beta-barrel shape of most known fluorescent and chromoproteins with the chromophore running through the centre. The models were aligned with the GFP biosensor from John et al. (2022).<br>
+            <img style="width: 50%; margin: 40px auto; display: block; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/project-description/3dmodels480.gif"><br><br>
+            Next, an amino acid sequence alignment was completed in order to identify the residues that may contribute to the colour difference between tsPurple and asPink. Through systematic site-directed mutagenesis and analysis of the predicted protein structure, the identity of the essential amino acids will be elucidated. The tsPurple enzyme will then be further engineered to be able to switch colours from purple to pink, similar to the biosensor published by John et al. (2022).
+
+            <img style="width: 80%; margin: 40px auto; display: block; border-radius: 10px;" src="https://static.igem.wiki/teams/4599/wiki/project-description/tspurple-aspink-alignment-aa.png"><br>
+        </p>
+          </div>
+
+          <div id="option_4_header">
+          <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-fish.png"><h1 class="p-title">Results</h1></div>
+
+            <p class="main-P-Text">
+                We were able to change T94 and T95 in asPink to the corresponding amino acids Q94 and I95 of tsPurple. The change did not result in a colour shift, as the mutant protein was still pink, but it did result in a much slower maturation of the protein. Colour was only observed in the bacterial colonies after more than 24 hours and a period of incubation at 4 degrees C.
+
+          </p>
+          </div>
+
+          <div id="option_5_header">
+          <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-glass.png"><h1 class="p-title">Future Directions</h1></div>
+
+            <p class="main-P-Text">
+                After elucidating the essential amino acids for the colour difference between the two proteins, we plan to rearrange the structure to include a new beta-strand that would give the new colour as well as a trigger sequence. As a proof-of-concept, the rapamycin binding domain would be used as the trigger domain to test our colour-switching biosensor as it has been used previously (John et al., 2022). However, this trigger domain could be customized to bind to an array of pathogen targets.
+<br><br>
+                The “trigger” domain would consist of an intrinsically disordered protein (IDP) sequence. These domains have no defined tertiary structure and can change their shape upon binding to a ligand. If a protein contains a long, intrinsically disordered surface loop, the loop is free to adopt a normal distribution of end-to-end distances when the protein is unfolded, but its ends are constrained when the protein is folded. Many cellular functions, including signaling and regulation, are carried out by IDPs binding to their ligands. 
+                <br><br>
+                While there is currently no one tool available to design IDPs, a combination of existing tools might be utilized. Computational docking tools, which predict how small molecules interact with proteins, could be used in conjunction with molecular dynamics simulations to explore how IDPs might interact with potential ligands. Machine learning tools like AlphaFold, could be used to predict binding motifs or regions that are likely to undergo transitions to a more ordered state upon binding to a partner molecule. This field of molecular biology is rapidly expanding and new tools and approaches are continually being developed.
+                
+                <br><br>
+                As a proof-of-concept, we investigated how to detect velvet disease. This ectoparasite protozoan of the Amyloodinium family infects many economically relevant fish species and can cause major losses for both commercial producers and domestic fish owners. The lifecycle is triphasic and can be completed in under a week with ideal conditions. The trophont is the parasitic stage feeding directly from the host on gill and skin epithelia. Two to six days after feeding, the trophont detaches and encysts, transforming into the tomont, the free-living cystic reproductive stage from which it can hatch more than 250 dinospores by asexual reproduction. The dinospore can then go on to find a new host and once it's adhered, transforms into the trophont, ready to digest the host’s cells.
+                <br><br>
+                Figure of lifecycle
+                <br><br>
+                Transcriptomic analysis was completed on Amyloodinium ocellatum and several genes were identified as potential virulence factors. These included genes for proteins involved in adhesion, invasion, establishment and proteases (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7692099/pdf/genes-11-01252.pdf). For our project, the adhesion proteins could be used as a biomarker for our detection platform. These proteins are on the surface of the organism and could interact with the IDP trigger region of the switchable biosensor.
+          </p>
+          
+          
+          
+         
+        </p>
+        </div>
+
+            <button id="scroll-top" onclick="backToTop()"><img src="https://static.igem.wiki/teams/4599/wiki/blue-scroll-top.png"></button>
+      </div>
+    </div>
+
+    <footer id="footer", class="footer">
+      
+    <div class="social-icons-wrapper">
+      <a href="https://www.facebook.com/lethbridgehsiGEM/" target="_blank" class="social-link facebook-link w-inline-block icon-link">
+        <img src="https://static.igem.wiki/teams/4599/wiki/facebook-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <a href="https://twitter.com/lethhs_igem?lang=en" target="_blank" class="social-link twitter-link w-inline-block icon-link">
+        <img src="https://static.igem.wiki/teams/4599/wiki/x-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <a href="https://www.instagram.com/lethbridgehsigem/" target="_blank" class="social-link instagram-link w-inline-block icon-link">
+        <img src="https://static.igem.wiki/teams/4599/wiki/instagram-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <a href="https://www.tiktok.com/@lethbridgehsigem" target="_blank" class="social-link tik-tok-link w-inline-block icon-link">
+          <img src="https://static.igem.wiki/teams/4599/wiki/tik-tok-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
   
-{% block title %}Description{% endblock %}
-{% block lead %}Project Description{% endblock %}
+      <div class="footer-divider"></div>
+      <a href="https://gitlab.igem.org/2023/lethbridgehs" target="_blank" class="social-link gitlab-link w-inline-block icon-link">
+          <img src="https://static.igem.wiki/teams/4599/wiki/gitlab-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <div class="footer-divider"></div>
+      <div class="footer-text">
+        <p class="mb-0"><small>© 2023 - Content on this site is licensed under a <a class="subfoot" href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</small></p>
+        <p><small>The repository used to create this website is available at <a class="subfoot" href="https://gitlab.igem.org/2023/lethbridgehs">gitlab.igem.org/2023/lethbridgehs</a>.</small></p>        
+      </div>    
+    </div>
+  </footer>
+
+  <div class="loader-wrapper">
+    <span class="loader"></span>
+  </div>
+
+    <script src="static/index.js"></script>
+</body>
+</html>
