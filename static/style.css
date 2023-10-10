@@ -1,0 +1,21 @@
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Adjust the z-index value as needed */
+}
+
+.loader {
+  display: inline-block;
+  width: 900px; /* Adjust the width and height according to your GIF dimensions */
+  height: 900px;
+  background-image: url("https://static.igem.wiki/teams/4599/wiki/loading.gif"); /* Replace 'path-to-your-gif.gif' with the actual path to your GIF file */
+  background-size: cover;
+}
