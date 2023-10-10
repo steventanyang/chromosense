@@ -58,21 +58,10 @@ def results():
 
 #Dry Lab dropdown
 
-@app.route('/hardware')
-def hardware():
-    return render_template('pages/hardware.html')
-
-@app.route('/software')
-def software():
-    return render_template('pages/software.html')
-
 @app.route('/model')
 def model():
     return render_template('pages/model.html')
 
-@app.route('/measurement')
-def measurement():
-    return render_template('pages/measurement.html')
 
 #Team dropdown
 
@@ -103,13 +92,6 @@ def education():
 def safety():
     return render_template('pages/safety.html')
 
-@app.route('/entrepreneurship')
-def entrepreneurship():
-    return render_template('pages/entrepreneurship.html')
-
-@app.route('/sustainability')
-def sustainability():
-    return render_template('pages/sustainable.html')
 
 @app.route('/<page>')
 def pages(page):

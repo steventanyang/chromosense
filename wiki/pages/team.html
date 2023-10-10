@@ -131,17 +131,18 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
-function load(){
-  let loader = document.getElementById('pre-loader')
-  loader.style.display = "none";
-  loader.style.display = "block";
-} 
 
-function showLoad(){
-  var myconst;
-  myconst = setTimeout(load, 3000);
-  console.log('poo')
+function showLoader() {
+  document.querySelector('.loader-wrapper').style.display = 'flex';
 }
+
+function hideLoader() {
+  document.querySelector('.loader-wrapper').style.display = 'none';
+}
+
+showLoader();
+
+setTimeout(hideLoader, 2000);
 
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
