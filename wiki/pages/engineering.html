@@ -1,4 +1,198 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/stylesheet.css">
+</head>
+<div class="tank_middle">
+  <div class="box">
+    <a href="home"><img src="https://static.igem.wiki/teams/4599/wiki/img-5550.png" style="width: 70px;"></a>
+      <div class="dropdown">
+        <a onclick= "myFunction('myDropdown')" class="nav-button">Project<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown">
+            <a href="description">Description</a>
+            <a href="contribution">Contribution</a>
+            <a href="engineering">Engineering</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="myFunction('myDropdown1')" class="nav-button">Wet Lab<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown1">
+            <a href="experiments">Experiments</a>
+            <a href="notebook">Notebook</a>
+            <a href="results">Results</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="myFunction('myDropdown2')" class="nav-button">Dry Lab<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown2">
+            <a href="model">Model</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="myFunction('myDropdown3')" class="nav-button">Team<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown3">
+            <a href="team">Team</a>
+            <a href="attributions">Attributions</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a  onclick="myFunction('myDropdown4')" class="nav-button">Human Practices<span> <div class="down_charet">&#8964;</div></span></a>
+        <div class="dropdbtn" id="myDropdown4">
+            <a href="humanpractices">Human Practices</a>
+            <a href="inclusivity">Inclusivity</a>
+            <a href="education">Education</a>
+            <a href="safety">Safety</a>
+          </div>
+      </div>
+  </div>
+</div>    
+<body class="body_not_home">
+
+    <div class="top_header_body">
+        <div class="top_header_title">{% block title %} Engineering {% endblock %}</div>
+        <div class="top_header_subtitle">{% block lead %} Growth from Failure {% endblock %}</div>
+        <div class="top_header_gradient"></div>
+    </div>
+
+    <div> <!--mainbody-->
+        <div class="table_of_contents_container">
+          <p class="table_of_contents_title">
+            Engineering
+          </p>
+          <div onclick="location.href='#option_1_header'" class="content_of_table" id="option_1">
+            Ideation
+          </div>
+          <div onclick="location.href='#option_2_header'" class="content_of_table" id="option_2">
+            Re-Defining the Problem
+          </div>
+          <div onclick="location.href='#option_3_header'" class="content_of_table" id="option_3">
+            Biosensor Design
+          </div>
+          <div onclick="location.href='#option_4_header'" class="content_of_table" id="option_4">
+            Evaluation
+          </div>
+          <div onclick="location.href='#option_5_header'" class="content_of_table" id="option_5">
+            Future Directions
+          </div>
+        </div>
+
+        
+        <!--ABSTRACT-->
+        <div class="text_by_side">
+          <div id="option_1_header">
+              <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/sky-bulb.png"><h1 class="p-title">Ideation</h1></div>
+                <h2>ANA-Lyze This: Our Original Idea</h2>
+                <p class="main-P-Text">
+                During the initial planning stage, our team decided on a project that focused on the detection of Antinuclear Antibodies, a common indicator of many autoimmune diseases. With goals of providing accessibility, we envisioned “ANA-Lyze this” to be a biosensor based rapid test that could be used in the comfort of one’s home. Below is the “ANA-Lyze This” logo created by team member, Tracy Wen. <br>
+                <img style="width: 40%; margin: 40px auto; display: block; border-radius: 5px;" src="https://static.igem.wiki/teams/4599/wiki/engineering/analogo.png">
+                Originally pitched by team members Steven Yang and Morteza Faraji, our team decided to take inspiration from the work done by Stewart Loh’s lab. In their 2022 paper, they created a switchable GFP biosensor that could change color upon binding to a ligand. We planned to adapt these principles to chromoproteins, which would offer the advantage of easy visual detection without specialized equipment. Chromoproteins are unique in that they change color upon binding to a target molecule, making them suitable for a visual, user-friendly diagnostic test. We had grand ambitions for "ANA-Lyze This," envisioning it as a groundbreaking tool, similar to that of a Covid-19 test, that could be easily used by individuals at home. <br>
+                <img style="width: 60%; margin: 40px auto; display: block; border-radius: 5px;" src="https://static.igem.wiki/teams/4599/wiki/engineering/gfpdetectionmutant-fig2.png">  <!-- REPLACE THIS IMAGE WITH A GOOD ONE -->
+                However, our journey took an unexpected turn when we presented our project idea to judges at the MindFuel's Tech Futures Challenge. Their feedback made us reconsider our project's direction. They pointed out several concerns, including the practicality of our project. It became evident that our initial project concept was not aligning with the desired global impact we sought. 
+            </p>
+        </div>
+            
+          <div id="option_2_header">
+            <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-problem.png"><h1 class="p-title">Re-Defining the Problem</h1></div>
+            <p class="main-P-Text">
+                In light of this feedback, our team decided to pivot away from the ANA detection sensor concept. We didn't abandon the innovative chromoprotein technology we had been exploring but instead refocused our efforts. We transformed our project into a versatile biosensor platform that could be adapted for various applications, Chromosense!<br>
+                <img style="width: 60%; margin: 40px auto; display: block; border-radius: 5px;" src="https://static.igem.wiki/teams/4599/wiki/engineering/img-7819.png">  <!-- REPLACE THIS IMAGE WITH A GOOD ONE --><br>
+
+                Our newly devised project aimed to harness the color-changing properties of chromoproteins in a way that would be both impactful and practical. After careful consideration, we decided to address a different challenge: Velvet disease, a severe health issue in captive marine fish caused by Amyloodinium dinoflagellate parasites. The parasite infiltrates a fish's slime coat and damages its cells, posing a significant problem for fish farmers and pet owners. <br>
+                </p>
+            
+             </div>
+             
+          <div id="option_3_header">
+          <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-dna.png"><h1 class="p-title">Biosensor Design</h1></div>
+
+            <p class="main-P-Text">
+                Using the constructs developed by the Uppsala iGEM team as our starting point, the focus of our biosensor is asPink and tsPurple, two remarkable chromoproteins that share the same chromophore sequence, CMYG. In order to create a switchable chromoprotein, the first step was to understand what makes asPink and tsPurple switch. What are the specific amino acids responsible for their distinct colors? Our journey takes us to amino acids I46, T94, and T95 in asPink. These particular amino acids drew our attention because they were not conserved between the two proteins and were predicted to interact with the chromophore in our structural models. Therefore, our strategy involves replacing these amino acids in asPink with their counterparts from tsPurple: T46, Q94, and I95. By doing so, we aim to pinpoint the essential amino acids that govern color change. <br>
+                <img style="width: 50%; margin: 40px auto; display: block; border-radius: 5px;" src="https://static.igem.wiki/teams/4599/wiki/engineering/aspinktspurple.png"><br>
+                After site-directed mutagenesis, it was found that T94 and T95 were not essential for the colour differences. We have been unable to mutate I46 yet. Therefore, we need to go back to the amino acid sequences and investigate other differences. This will help identify how we can change asPink into tsPurple using strand displacement.
+        </p>
+          </div>
+
+          <div id="option_4_header">
+          <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-fish.png"><h1 class="p-title">Evaluation</h1></div>
+
+            <p class="main-P-Text">
+                <img style="width: 50%; margin: 40px auto; display: block; border-radius: 5px;" src="https://static.igem.wiki/teams/4599/wiki/engineering/mermaid-diagram-2023-10-09-110541.png"><br>
+                During the engineering cycle numerous challenges and unforeseen obstacles are encountered, underscoring the importance of project re-evaluation and adaptation of plans. Our experiences affirm that the initial phase, which involves defining the problem, is paramount and cannot be circumvented. A well-formed problem statement not only provides a clear direction but also serves as a goal throughout the development process. It has become evident that attempting to fit an existing technology to address a problem, without a thorough understanding and definition of the issue at hand, is a misaligned approach. Instead, the technology or solution developed should be tailored to meet the specific needs of the identified problem, ensuring that the following stages of the engineering cycle— from conceptualization to implementation— are effectively aligned toward a viable solution.
+            </p>
+          </div>
+
+          <div id="option_5_header">
+          <div class="image-container"><img src="https://static.igem.wiki/teams/4599/wiki/blue-glass.png"><h1 class="p-title">Future Directions</h1></div>
+
+            <p class="main-P-Text">
+                After elucidating the essential amino acids for the colour difference between the two proteins, we plan to rearrange the structure to include a new beta-strand that would give the new colour as well as a trigger sequence. As a proof-of-concept, the rapamycin binding domain would be used as the trigger domain to test our colour-switching biosensor as it has been used previously (John et al., 2022). However, this trigger domain could be customized to bind to an array of pathogen targets.
+<br><br>
+                The “trigger” domain would consist of an intrinsically disordered protein (IDP) sequence. These domains have no defined tertiary structure and can change their shape upon binding to a ligand. If a protein contains a long, intrinsically disordered surface loop, the loop is free to adopt a normal distribution of end-to-end distances when the protein is unfolded, but its ends are constrained when the protein is folded. Many cellular functions, including signaling and regulation, are carried out by IDPs binding to their ligands. 
+                <br><br>
+                While there is currently no one tool available to design IDPs, a combination of existing tools might be utilized. Computational docking tools, which predict how small molecules interact with proteins, could be used in conjunction with molecular dynamics simulations to explore how IDPs might interact with potential ligands. Machine learning tools like AlphaFold, could be used to predict binding motifs or regions that are likely to undergo transitions to a more ordered state upon binding to a partner molecule. This field of molecular biology is rapidly expanding and new tools and approaches are continually being developed.
+                
+                <br><br>
+                As a proof-of-concept, we investigated how to detect velvet disease. This ectoparasite protozoan of the Amyloodinium family infects many economically relevant fish species and can cause major losses for both commercial producers and domestic fish owners. The lifecycle is triphasic and can be completed in under a week with ideal conditions. The trophont is the parasitic stage feeding directly from the host on gill and skin epithelia. Two to six days after feeding, the trophont detaches and encysts, transforming into the tomont, the free-living cystic reproductive stage from which it can hatch more than 250 dinospores by asexual reproduction. The dinospore can then go on to find a new host and once it's adhered, transforms into the trophont, ready to digest the host’s cells.
+                <br><br>
+                Figure of lifecycle
+                <br><br>
+                Transcriptomic analysis was completed on Amyloodinium ocellatum and several genes were identified as potential virulence factors. These included genes for proteins involved in adhesion, invasion, establishment and proteases (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7692099/pdf/genes-11-01252.pdf). For our project, the adhesion proteins could be used as a biomarker for our detection platform. These proteins are on the surface of the organism and could interact with the IDP trigger region of the switchable biosensor.
+          </p>
+          
+          
+          
+         
+        </p>
+        </div>
+
+            <button id="scroll-top" onclick="backToTop()"><img src="https://static.igem.wiki/teams/4599/wiki/blue-scroll-top.png"></button>
+      </div>
+    </div>
+
+    <footer id="footer", class="footer">
+      
+    <div class="social-icons-wrapper">
+      <a href="https://www.facebook.com/lethbridgehsiGEM/" target="_blank" class="social-link facebook-link w-inline-block icon-link">
+        <img src="https://static.igem.wiki/teams/4599/wiki/facebook-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <a href="https://twitter.com/lethhs_igem?lang=en" target="_blank" class="social-link twitter-link w-inline-block icon-link">
+        <img src="https://static.igem.wiki/teams/4599/wiki/x-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <a href="https://www.instagram.com/lethbridgehsigem/" target="_blank" class="social-link instagram-link w-inline-block icon-link">
+        <img src="https://static.igem.wiki/teams/4599/wiki/instagram-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <a href="https://www.tiktok.com/@lethbridgehsigem" target="_blank" class="social-link tik-tok-link w-inline-block icon-link">
+          <img src="https://static.igem.wiki/teams/4599/wiki/tik-tok-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+  
+      <div class="footer-divider"></div>
+      <a href="https://gitlab.igem.org/2023/lethbridgehs" target="_blank" class="social-link gitlab-link w-inline-block icon-link">
+          <img src="https://static.igem.wiki/teams/4599/wiki/gitlab-logo.png" width="288" sizes="(max-width: 479px) 20vw, (max-width: 767px) 19vw, (max-width: 991px) 20vw, 16vw" alt="">
+      </a>
+      <div class="footer-divider"></div>
+      <div class="footer-divider"></div>
+      <div class="footer-text">
+        <p class="mb-0"><small>© 2023 - Content on this site is licensed under a <a class="subfoot" href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</small></p>
+        <p><small>The repository used to create this website is available at <a class="subfoot" href="https://gitlab.igem.org/2023/lethbridgehs">gitlab.igem.org/2023/lethbridgehs</a>.</small></p>        
+      </div>    
+    </div>
+  </footer>
+
+  <div class="loader-wrapper">
+    <span class="loader"></span>
+  </div>
+
+    <script src="static/index.js"></script>
+</body>
+</html>
 
 
 
