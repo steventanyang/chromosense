@@ -62,14 +62,14 @@
         <div class="carousel-container">
             <div class="carousel">
             <div class="icons">
-              
+
               <img src="https://static.igem.wiki/teams/4599/wiki/abc123/lauracrop.png" alt="Icon 3" data-text="Info about Icon 3" data-image="https://static.igem.wiki/teams/4599/wiki/abc123/bios/laura.png" data-name="MORTEZA sdafdf">
               <img src="https://static.igem.wiki/teams/4599/wiki/peakmorteza.jpg" alt="Icon 1" data-image="https://static.igem.wiki/teams/4599/wiki/mortezatp.png" data-name="MORTEZA MOEw">
-              <img src="https://static.igem.wiki/teams/4599/wiki/peaksteven.jpg" alt="Icon 1" data-image="https://static.igem.wiki/teams/4599/wiki/steventp2.png" data-name="MORTEZA MOEw">
+              <img src="https://static.igem.wiki/teams/4599/wiki/peaksteven.jpg" alt="Icon 1" data-image="https://static.igem.wiki/teams/4599/wiki/steventp2.png" data-linkedin="https://www.linkedin.com/in/steven-yang-2059b0268/" data-name="MORTEZA MOEw">
               <img src="https://static.igem.wiki/teams/4599/wiki/abc123/samreet.png" alt="Icon 8" data-text="Info about Icon 8" data-image="https://static.igem.wiki/teams/4599/wiki/samreetfinal.png" data-name="MORTEZA MOEw">
+              <img src="https://static.igem.wiki/teams/4599/wiki/team-page/team-page/masataro.jpeg" alt="Icon 1" data-image="https://static.igem.wiki/teams/4599/wiki/masatarofinal.png" data-name="MORTEZA MOEw">
               <img src="https://static.igem.wiki/teams/4599/wiki/abc123/mariecrop.png" alt="Icon 6" data-text="Info about Icon 6" data-image="https://static.igem.wiki/teams/4599/wiki/abc123/bios/11.png" data-name="MORTEZA MALhai">
               <img src="https://static.igem.wiki/teams/4599/wiki/zitonghs.png" alt="Icon 1" data-image="https://static.igem.wiki/teams/4599/wiki/zitongtp.png" data-name="MORTEZA MOEw">
-              <img src="https://static.igem.wiki/teams/4599/wiki/team-page/team-page/masataro.jpeg" alt="Icon 1" data-image="https://static.igem.wiki/teams/4599/wiki/masatarofinal.png" data-name="MORTEZA MOEw">
               <img src="https://static.igem.wiki/teams/4599/wiki/abc123/jaycrop.png" alt="Icon 3" data-text="Info about Icon 3" data-image="https://static.igem.wiki/teams/4599/wiki/abc123/bios/8.png" data-name="MORTEZA sdafdf">
               <img src="https://static.igem.wiki/teams/4599/wiki/abc123/tempimagezx8dsz.gif" alt="Icon 8" data-text="Info about Icon 8" data-image="https://static.igem.wiki/teams/4599/wiki/abc123/bios/5.png" data-name="MORTEZA MOEw">
               <img src="https://static.igem.wiki/teams/4599/wiki/abc123/austincrop.png" alt="Icon 1" data-text="Info about Icon 1" data-image="https://static.igem.wiki/teams/4599/wiki/abc123/bios/6.png" data-name="MORTEZA MOEw">
@@ -236,7 +236,14 @@ $(document).ready(function () {
     const text = $(this).data('text');
     const name = $(this).data('name');
     const image = $(this).data('image');
+    const linkedin = $(this).data('linkedin');
 
+    if (linkedin) {
+        window.open(linkedin, '_blank');
+    }
+
+    if (image) {
+    }
 
     // Update the content in the text header container with the name
     textInfoContainer.html(`

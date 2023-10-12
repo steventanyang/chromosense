@@ -16,6 +16,14 @@ a {
   color: #55B3FA; 
 }
 
+.home_bottom {
+  transition: filter 0.3s;
+}
+
+.home_bottom:hover {
+  filter: brightness(70%); 
+}
+
 .content-table {
   border-collapse: collapse;
   margin-bottom: 5%;
