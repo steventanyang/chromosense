@@ -76,7 +76,7 @@ def attributions():
 
 #Human Practices Dropdown
 
-@app.route('/humanpractices')
+@app.route('/human-practices')
 def humanpractices():
     return render_template('pages/human-practices.html')
 

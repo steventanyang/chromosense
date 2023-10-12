@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
@@ -682,7 +682,7 @@ body {
     overflow-x: hidden;
   }
   
-   @-webkit-keyframes swim
+  @-webkit-keyframes swim
   {
     0% {margin-left: -235px}
     90% {margin-left: 100%;}
@@ -877,10 +877,10 @@ body {
   }
   
   .icons img {
-    width: 120px; 
-    height: 195px;
-    border-radius: 50%;
-    margin: 15px; 
+    width: 110px; /* Adjust the icon width as needed */
+    height: 180px; /* Adjust the icon height as needed */
+    border-radius: 50%; /* Make the icons circular */
+    margin: 15px; /* Add a gap between icons */
     border-color: #ffffff;
     border: 8px solid #3b3636; /* Set the black border (2px in this example) */
   }
@@ -896,7 +896,7 @@ body {
 
 }
 
-.info-text {
+/* .info-text {
   padding-top: 20px;
   width: 47%;
   height: 39%;
@@ -905,22 +905,28 @@ body {
   left: 25%;
   top: 15.5%;
   font-size: 30px;
+} */
+
+.info-text img {
+  position: absolute;
+  width: 115%;
+  height: 51%;
 }
 
-.info-image {
+/* .info-image {
   position: absolute;
   right: 0;
   top: 30.5%;
   left: 81.1%;
-}
+} */
 
-.info-image img {
+/* .info-image img {
   background-image: url(https://static.igem.wiki/teams/4599/wiki/team-page/team-page/blank-team.png);
   width: 130px;
   height: 130px;
   border-radius: 50%;
 
-}
+} */
 
 
 #footer {
